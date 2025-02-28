@@ -17,8 +17,8 @@ export class Auth {
             try{
             const useraccount = await this.account.createOAuth2Session(
                 OAuthProvider.Google, // provider
-                'http://localhost:5173/dashboard/display', // redirect here on success
-                'http://localhost:5173/', // redirect here on failure
+                '/dashboard/display', // redirect here on success
+                '/', // redirect here on failure
             );
             } catch (error) {
                 console.log("Appwrite service :: login :: error", error);
