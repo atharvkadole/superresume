@@ -32,13 +32,10 @@ function App() {
       await authstore.getState().checkAuth()
     }
     initAuth()
-  }, [])
+    
+  }, []);
 
-  useEffect(() => {
-          if (isAuth) {
-              navigate('/Dashboard/display', { replace: true });
-          }
-      }, [isAuth, navigate]);
+
 
   return (
     <div className='flex flex-col h-screen w-screen '>
