@@ -24,6 +24,7 @@ const Dashboard = lazy(() => import('./components/Dashboard/Dashboard'))
 
 
 function App() {
+  const { isAuth } = authstore();
   const navigate = useNavigate();
   useEffect(() => {
     // Move this to a more appropriate place, like a route guard
