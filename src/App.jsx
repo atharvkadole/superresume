@@ -13,8 +13,7 @@ import Edit from './components/Dashboard/Display_prj/Edit'
 import Display from './components/Dashboard/Display_prj/Display'
 import storedb from './store/storedb'
 import Landingpage from './components/Landingpage/Landingpage'
-import Error from './Error';
-import { useNavigate } from 'react-router-dom'
+import Error from './Error'
 import './App.css'
 
 // Lazy load components
@@ -24,18 +23,14 @@ const Dashboard = lazy(() => import('./components/Dashboard/Dashboard'))
 
 
 function App() {
-  const { isAuth } = authstore();
-  const navigate = useNavigate();
+  
   useEffect(() => {
     // Move this to a more appropriate place, like a route guard
     const initAuth = async () => {
       await authstore.getState().checkAuth()
     }
     initAuth()
-    
-  }, []);
-
-
+  }, [])
 
   return (
     <div className='flex flex-col h-screen w-screen '>
