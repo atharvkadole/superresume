@@ -17,7 +17,7 @@ export class Auth {
             try{
             const useraccount = await this.account.createOAuth2Session(
                 OAuthProvider.Google, // provider
-                'https://superresume.vercel.app/login', // redirect here on success
+                'https://superresume.vercel.app/', // redirect here on success
                 'https://superresume.vercel.app/login', // redirect here on failure
             );
             } catch (error) {
