@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import authstore from '../../store/authstore';
 import Footer from './Footer';
+import Header from '../Navbar/Header';
 
 const Landingpage = () => {
     const navigate = useNavigate();
@@ -23,7 +24,8 @@ const Landingpage = () => {
         
     return (
         <div className=''>
-            <Navbar />
+            {/* <Navbar /> */}
+            <Header />
             <HeroSection />
             <ContinuousThumbnailCarousel />
             <OneClickDeploySection />
