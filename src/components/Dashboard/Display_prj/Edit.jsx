@@ -108,7 +108,7 @@ const Edit = () => {
           </div>
 
           {/* Form Content */}
-          <div className="flex-1 overflow-y-auto px-4 sm:px-6 py-4">
+          <div className="flex-1 overflow-y-auto px-2 sm:px-4 sm:px-6 py-4">
             {steps.map((step) => counter === step.id && (
               <div key={step.id} className="h-full">
                 <step.component />
