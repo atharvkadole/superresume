@@ -27,7 +27,7 @@ const Dashboard = () => {
     }
 
     return (
-        <div className="w-screen h-screen bg-gray-900 p-3">
+        <div className="w-screen h-screen bg-gray-900 p-1 sm:p-3">
             
             <TemporaryDrawer />
         </div>

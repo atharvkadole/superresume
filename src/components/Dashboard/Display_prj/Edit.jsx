@@ -65,7 +65,7 @@ const Edit = () => {
   }
 
   return (
-    <div className="min-h-screen w-full p-2">
+    <div className="min-h-screen w-full p-0 sm:p-2" >
       {/* Toggle button for mobile/tablet - fixed position */}
       <button 
         onClick={() => setShowPreview(!showPreview)}
