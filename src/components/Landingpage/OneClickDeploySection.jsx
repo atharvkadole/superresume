@@ -163,10 +163,13 @@
 import { useState } from "react"
 import { Rocket, Check, Globe, Code, Server, Clock, ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
+import { useNavigate } from "react-router-dom"
 
 const OneClickDeploySection = () => {
   const [domainName, setDomainName] = useState("your-portfolio")
   const [selectedPlan, setSelectedPlan] = useState("free")
+
+  const navigate = useNavigate()
 
   return (
     <section className="bg-gray-900 py-12 md:py-20 overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 relative">
@@ -192,6 +195,7 @@ const OneClickDeploySection = () => {
             </motion.div>
 
             <motion.h2
+              
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -246,6 +250,7 @@ const OneClickDeploySection = () => {
             </motion.div>
 
             <motion.button
+              onClick={() => navigate("/login")}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
@@ -343,7 +348,7 @@ const OneClickDeploySection = () => {
               </div>
 
               {/* One-Click Button */}
-              <div className="relative">
+              <div onClick={() => {navigate("/login")}} className="relative">
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}

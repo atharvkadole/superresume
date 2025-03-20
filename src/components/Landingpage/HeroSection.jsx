@@ -26,7 +26,7 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button className="bg-violet-600 hover:bg-violet-700 text-white font-medium py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-all duration-300 shadow-lg shadow-violet-900/20">
+              <button onClick={() => navigate('/login')} className="bg-violet-600 hover:bg-violet-700 text-white font-medium py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-all duration-300 shadow-lg shadow-violet-900/20">
                 Get Started <ArrowRight size={18} />
               </button>
               <button className="bg-gray-800 hover:bg-gray-700 border border-gray-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-2">
