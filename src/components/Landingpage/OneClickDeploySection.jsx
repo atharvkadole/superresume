@@ -158,8 +158,6 @@
 
 // export default OneClickDeploySection;
 
-"use client"
-
 import { useState } from "react"
 import { Rocket, Check, Globe, Code, Server, Clock, ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
